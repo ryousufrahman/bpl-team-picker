@@ -1,10 +1,12 @@
-import React, { use } from 'react';
+import React, { use, useState } from 'react';
 import Player from './Player';
-import NotSelected from '../Selected/NotSelected';
+
+import SelectedPlayer from '../Selected/SelectedPlayer';
 
 const Players = ({fetchPlayer , status, setStatus ,coin , setCoin}) => {
     const data = use(fetchPlayer);
     console.log(data);
+    const [selectPlayer , setSelectPlayer] =useState([])
     
    
     
@@ -22,7 +24,7 @@ const Players = ({fetchPlayer , status, setStatus ,coin , setCoin}) => {
          </div>
          <div className='grid  grid-cols-1 p-5 gap-4 md:grid-cols-2 lg:grid-cols-4'>
             {
-              status ==="available" ? data.map(ply => <Player key={ply.id} ply ={ply} coin ={coin} setCoin={setCoin}></Player>) : <NotSelected></NotSelected>
+              status ==="available" ? data.map(ply => <Player key={ply.id} ply ={ply} coin ={coin} setCoin={setCoin}selectPlayer={selectPlayer} setSelectPlayer={setSelectPlayer} ></Player>) : <SelectedPlayer selectPlayer ={selectPlayer} setSelectPlayer={setSelectPlayer}></SelectedPlayer>
             }
          </div>
        

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { FaUser ,  FaFlag } from "react-icons/fa";
 
 
-const Player = ({ply ,coin , setCoin}) => {
+const Player = ({ply ,coin , setCoin , selectPlayer , setSelectPlayer}) => {
   const [select , setSelect] =useState(false)
   const handleSetCoin= ()=>{
     const newCoin = coin - ply.playerPrice
@@ -12,6 +12,7 @@ const Player = ({ply ,coin , setCoin}) => {
     }
     else{
       setCoin(newCoin);
+          setSelectPlayer([...selectPlayer, ply]);
     }
     
     setSelect(true)
