@@ -1,23 +1,41 @@
 import React from "react";
+import { FaUser ,  FaFlag } from "react-icons/fa";
 
 const Player = ({ply}) => {
   return (
     <>
-      <div className="card bg-base-100  shadow-sm">
+      <div className="card bg-base-100  shadow-sm ">
         <figure>
           <img
             src={ply.playerImg}
             alt="Shoes" className="h-40 w-fit "
           />
         </figure>
-        <div className="card-body">
-          <h2 className="card-title">{ply.playerName}</h2>
-          <p>
-            A card component has a figure, a body part, and inside body there
-            are title and actions parts
-          </p>
-          <div className="card-actions justify-end">
-            <button className="btn btn-primary">Buy Now</button>
+        <div className="card-body space-y-2">
+           <div className="flex gap-2 items-center">
+             <FaUser /> <h2 className="card-title">{ply.playerName}</h2>
+           </div>
+           <div className="flex justify-between items-center">
+              <div className="flex gap-2 items-center">
+                <FaFlag />
+                <p className="text-gray-500 font-bold">{ply.playerCountry}</p>
+              </div>
+            <button className="btn text-gray-500">{ply.playerFormat}</button>
+           </div>
+           <div className="divider"></div>
+           <div className="flex justify-between font-bold ">
+            <p>Rating</p>
+            <p className="text-right text-gray-500">{ply.playerRating}</p>
+           </div>
+           <div className="flex justify-between font-bold ">
+            <p>Plying Style</p>
+            <p className="text-right text-gray-500">{ply.bowlingStyle}</p>
+
+           </div>
+          
+          <div className="card-actions justify-between items-center">
+            <p className="font-bold">Price : <span>{ply.playerPrice}</span></p>
+            <button className="btn text-gray-500 ">Choose Player</button>
           </div>
         </div>
       </div>

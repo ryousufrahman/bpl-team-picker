@@ -14,7 +14,7 @@ const Players = ({fetchPlayer}) => {
             
 
          </div>
-         <div className='grid  grid-cols-1 p-3 gap-4 md:grid-cols-2 lg:grid-cols-4'>
+         <div className='grid  grid-cols-1 p-5 gap-4 md:grid-cols-2 lg:grid-cols-4'>
             {
                 data.map(ply => <Player key={ply.id} ply ={ply}></Player>)
             }
