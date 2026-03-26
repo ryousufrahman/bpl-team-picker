@@ -5,8 +5,17 @@ import { FaUser ,  FaFlag } from "react-icons/fa";
 const Player = ({ply ,coin , setCoin}) => {
   const [select , setSelect] =useState(false)
   const handleSetCoin= ()=>{
+    const newCoin = coin - ply.playerPrice
+    if(newCoin<0){
+      alert('not enough coin to buy this player');
+      return;
+    }
+    else{
+      setCoin(newCoin);
+    }
+    
     setSelect(true)
-    setCoin(coin - ply.playerPrice)
+    
   }
   return (
     <>
