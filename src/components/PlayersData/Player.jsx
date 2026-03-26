@@ -1,7 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import { FaUser ,  FaFlag } from "react-icons/fa";
 
-const Player = ({ply}) => {
+
+const Player = ({ply ,coin , setCoin}) => {
+  const [select , setSelect] =useState(false)
+  const handleSetCoin= ()=>{
+    setSelect(true)
+    setCoin(coin - ply.playerPrice)
+  }
   return (
     <>
       <div className="card bg-base-100  shadow-sm ">
@@ -35,7 +41,11 @@ const Player = ({ply}) => {
           
           <div className="card-actions justify-between items-center">
             <p className="font-bold">Price : <span>{ply.playerPrice}</span></p>
-            <button className="btn text-gray-500 ">Choose Player</button>
+            <button className="btn text-gray-500 " onClick={handleSetCoin}
+              disabled={select}
+              >
+              {select ? 'Selected' : 'Choose Player'}
+              </button>
           </div>
         </div>
       </div>

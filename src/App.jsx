@@ -10,14 +10,14 @@ const fetchPlayer = fetch('/data.json').then(res => res.json())
 
 function App() {
   const [status , setStatus] =useState('available')
-  
+  const [coin , setCoin] =useState(5000)
 
   
 
   return (
     <>
       <header className='max-w-[1320px] mx-auto mt-5'>
-        <Navbar></Navbar>
+        <Navbar coin ={coin}></Navbar>
         <Hero></Hero>
 
 
@@ -25,7 +25,7 @@ function App() {
       <main className='max-w-[1320px] mx-auto'>
         <Suspense fallback={<div className=' flex justify-center items-center text-8xl'><span className="loading loading-bars loading-xl"></span></div>}>
 
-          <Players fetchPlayer={fetchPlayer} status ={status} setStatus={setStatus} ></Players>
+          <Players fetchPlayer={fetchPlayer} status ={status} setStatus={setStatus} coin ={coin} setCoin={setCoin}></Players>
         </Suspense>
 
 

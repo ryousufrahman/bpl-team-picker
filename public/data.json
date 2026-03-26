@@ -8,7 +8,7 @@
     "playerRating": 9.5,
     "battingStyle": "right",
     "bowlingStyle": "right",
-    "playerPrice": 2000000
+    "playerPrice": 1000
   },
   {
     "id": 2,
@@ -19,7 +19,7 @@
     "playerRating": 9.2,
     "battingStyle": "right",
     "bowlingStyle": "right",
-    "playerPrice": 1800000
+    "playerPrice": 500
   },
   {
     "id": 3,
@@ -30,7 +30,7 @@
     "playerRating": 9.3,
     "battingStyle": "right",
     "bowlingStyle": "right",
-    "playerPrice": 1900000
+    "playerPrice": 1000
   },
   {
     "id": 4,
@@ -41,7 +41,7 @@
     "playerRating": 9.1,
     "battingStyle": "right",
     "bowlingStyle": "right",
-    "playerPrice": 1750000
+    "playerPrice": 1000
   },
   {
     "id": 5,
@@ -52,7 +52,7 @@
     "playerRating": 9.4,
     "battingStyle": "left",
     "bowlingStyle": "right",
-    "playerPrice": 2100000
+    "playerPrice": 2000
   },
   {
     "id": 6,
@@ -63,7 +63,7 @@
     "playerRating": 9.0,
     "battingStyle": "left",
     "bowlingStyle": "left",
-    "playerPrice": 1700000
+    "playerPrice": 1000
   },
   {
     "id": 7,
@@ -74,7 +74,7 @@
     "playerRating": 8.9,
     "battingStyle": "right",
     "bowlingStyle": "right",
-    "playerPrice": 1600000
+    "playerPrice": 1000
   },
   {
     "id": 8,
@@ -85,7 +85,7 @@
     "playerRating": 9.6,
     "battingStyle": "right",
     "bowlingStyle": "right",
-    "playerPrice": 2200000
+    "playerPrice": 2000
   }
   
 ]
