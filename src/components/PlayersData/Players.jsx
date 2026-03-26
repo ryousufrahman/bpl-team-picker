@@ -1,7 +1,7 @@
 import React, { use } from 'react';
 import Player from './Player';
 
-const Players = ({fetchPlayer}) => {
+const Players = ({fetchPlayer , status, setStatus}) => {
     const data = use(fetchPlayer);
     console.log(data);
     
@@ -10,7 +10,12 @@ const Players = ({fetchPlayer}) => {
 
     return (
        <>
-         <div className='mt-5'> 
+         <div className='mt-5 mb-5 flex justify-between p-4'> 
+            <h2 className='font-bold text-2xl'>Available Players</h2>
+            <div>
+                <button className={`btn rounded-r-none rounded-l-2xl ${status=='available' ? 'bg-[#E7FE29] font-bold' : ''}`} onClick={()=>setStatus('available')}>Available</button>
+                <button className={`btn rounded-l-none rounded-r-2xl ${status=='select' ? 'bg-[#E7FE29] font-bold' : ''}`} onClick={()=>setStatus('select')} >Selected</button>
+            </div>
             
 
          </div>
