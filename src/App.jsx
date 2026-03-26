@@ -4,6 +4,7 @@ import './App.css'
 import Hero from './components/Hero/Hero'
 import Navbar from './components/Navbar/Navbar'
 import Players from './components/PlayersData/Players'
+import NewsLetter from './components/Footer/NewsLetter'
 
 const fetchPlayer = fetch('/data.json').then(res => res.json())
 function App() {
@@ -27,7 +28,8 @@ function App() {
 
 
       </main>
-      <footer className='max-w-[1320px] mx-auto'>
+      <footer className='bg-black py-15 mt-10'>
+        <NewsLetter></NewsLetter>
 
       </footer>
         
