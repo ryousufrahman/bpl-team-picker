@@ -1,0 +1,134 @@
+[
+  {
+    "id": 1,
+    "player_img": "https://example.com/players/virat-kohli.jpg",
+    "player_name": "Virat Kohli",
+    "player_country": "India",
+    "player_format": "batter",
+    "player_rating": 95,
+    "batting_style": "right",
+    "bowling_style": "right",
+    "player_price": 2000000
+  },
+  {
+    "id": 2,
+    "player_img": "https://example.com/players/joe-root.jpg",
+    "player_name": "Joe Root",
+    "player_country": "England",
+    "player_format": "batter",
+    "player_rating": 92,
+    "batting_style": "right",
+    "bowling_style": "right",
+    "player_price": 1800000
+  },
+  {
+    "id": 3,
+    "player_img": "https://example.com/players/babar-azam.jpg",
+    "player_name": "Babar Azam",
+    "player_country": "Pakistan",
+    "player_format": "batter",
+    "player_rating": 93,
+    "batting_style": "right",
+    "bowling_style": "right",
+    "player_price": 1900000
+  },
+  {
+    "id": 4,
+    "player_img": "https://example.com/players/kane-williamson.jpg",
+    "player_name": "Kane Williamson",
+    "player_country": "New Zealand",
+    "player_format": "batter",
+    "player_rating": 91,
+    "batting_style": "right",
+    "bowling_style": "right",
+    "player_price": 1750000
+  },
+  {
+    "id": 5,
+    "player_img": "https://example.com/players/ben-stokes.jpg",
+    "player_name": "Ben Stokes",
+    "player_country": "England",
+    "player_format": "allrounder",
+    "player_rating": 94,
+    "batting_style": "left",
+    "bowling_style": "right",
+    "player_price": 2100000
+  },
+  {
+    "id": 6,
+    "player_img": "https://example.com/players/shakib-al-hasan.jpg",
+    "player_name": "Shakib Al Hasan",
+    "player_country": "Bangladesh",
+    "player_format": "allrounder",
+    "player_rating": 90,
+    "batting_style": "left",
+    "bowling_style": "left",
+    "player_price": 1700000
+  },
+  {
+    "id": 7,
+    "player_img": "https://example.com/players/hardik-pandya.jpg",
+    "player_name": "Hardik Pandya",
+    "player_country": "India",
+    "player_format": "allrounder",
+    "player_rating": 89,
+    "batting_style": "right",
+    "bowling_style": "right",
+    "player_price": 1600000
+  },
+  {
+    "id": 8,
+    "player_img": "https://example.com/players/jasprit-bumrah.jpg",
+    "player_name": "Jasprit Bumrah",
+    "player_country": "India",
+    "player_format": "bowler",
+    "player_rating": 96,
+    "batting_style": "right",
+    "bowling_style": "right",
+    "player_price": 2200000
+  },
+  {
+    "id": 9,
+    "player_img": "https://example.com/players/mitchell-starc.jpg",
+    "player_name": "Mitchell Starc",
+    "player_country": "Australia",
+    "player_format": "bowler",
+    "player_rating": 94,
+    "batting_style": "left",
+    "bowling_style": "left",
+    "player_price": 2000000
+  },
+  {
+    "id": 10,
+    "player_img": "https://example.com/players/trent-boult.jpg",
+    "player_name": "Trent Boult",
+    "player_country": "New Zealand",
+    "player_format": "bowler",
+    "player_rating": 92,
+    "batting_style": "right",
+    "bowling_style": "left",
+    "player_price": 1850000
+  },
+  {
+    "id": 11,
+    "player_img": "https://example.com/players/david-warner.jpg",
+    "player_name": "David Warner",
+    "player_country": "Australia",
+    "player_format": "batter",
+    "player_rating": 90,
+    "batting_style": "left",
+    "bowling_style": "right",
+    "player_price": 1700000
+  },
+  {
+    "id": 12,
+    "player_img": "https://example.com/players/rashid-khan.jpg",
+    "player_name": "Rashid Khan",
+    "player_country": "Afghanistan",
+    "player_format": "bowler",
+    "player_rating": 95,
+    "batting_style": "right",
+    "bowling_style": "right",
+    "player_price": 2100000
+  }
+]

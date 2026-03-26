@@ -1,5 +1,6 @@
 
 import './App.css'
+import Hero from './components/Hero/Hero'
 import Navbar from './components/Navbar/Navbar'
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
     <>
       <header className='max-w-[1320px] mx-auto mt-5'>
         <Navbar></Navbar>
+        <Hero></Hero>
 
 
       </header>
