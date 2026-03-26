@@ -1,0 +1,91 @@
+[
+  {
+    "id": 1,
+    "playerImg": "https://i.ibb.co.com/BV69myKK/virat.png",
+    "playerName": "Virat Kohli",
+    "playerCountry": "India",
+    "playerFormat": "batter",
+    "playerRating": 9.5,
+    "battingStyle": "right",
+    "bowlingStyle": "right",
+    "playerPrice": 2000000
+  },
+  {
+    "id": 2,
+    "playerImg": "https://i.ibb.co.com/BMhmvwp/root.png",
+    "playerName": "Joe Root",
+    "playerCountry": "England",
+    "playerFormat": "batter",
+    "playerRating": 9.2,
+    "battingStyle": "right",
+    "bowlingStyle": "right",
+    "playerPrice": 1800000
+  },
+  {
+    "id": 3,
+    "playerImg": "https://i.ibb.co.com/Rk51zv8y/babar.png",
+    "playerName": "Babar Azam",
+    "playerCountry": "Pakistan",
+    "playerFormat": "batter",
+    "playerRating": 9.3,
+    "battingStyle": "right",
+    "bowlingStyle": "right",
+    "playerPrice": 1900000
+  },
+  {
+    "id": 4,
+    "playerImg": "https://i.ibb.co.com/zWWXBttq/kane.png",
+    "playerName": "Kane Williamson",
+    "playerCountry": "New Zealand",
+    "playerFormat": "batter",
+    "playerRating": 9.1,
+    "battingStyle": "right",
+    "bowlingStyle": "right",
+    "playerPrice": 1750000
+  },
+  {
+    "id": 5,
+    "playerImg": "https://i.ibb.co.com/vC3yqjG7/ben.png",
+    "playerName": "Ben Stokes",
+    "playerCountry": "England",
+    "playerFormat": "allrounder",
+    "playerRating": 9.4,
+    "battingStyle": "left",
+    "bowlingStyle": "right",
+    "playerPrice": 2100000
+  },
+  {
+    "id": 6,
+    "playerImg": "https://i.ibb.co.com/YT85DZ8K/shakib.png",
+    "playerName": "Shakib Al Hasan",
+    "playerCountry": "Bangladesh",
+    "playerFormat": "allrounder",
+    "playerRating": 9.0,
+    "battingStyle": "left",
+    "bowlingStyle": "left",
+    "playerPrice": 1700000
+  },
+  {
+    "id": 7,
+    "playerImg": "https://i.ibb.co.com/mrcpQBJk/hardik.png",
+    "playerName": "Hardik Pandya",
+    "playerCountry": "India",
+    "playerFormat": "allrounder",
+    "playerRating": 8.9,
+    "battingStyle": "right",
+    "bowlingStyle": "right",
+    "playerPrice": 1600000
+  },
+  {
+    "id": 8,
+    "playerImg": "https://i.ibb.co.com/qY9363ff/bumra.png",
+    "playerName": "Jasprit Bumrah",
+    "playerCountry": "India",
+    "playerFormat": "bowler",
+    "playerRating": 9.6,
+    "battingStyle": "right",
+    "bowlingStyle": "right",
+    "playerPrice": 2200000
+  }
+  
+]
