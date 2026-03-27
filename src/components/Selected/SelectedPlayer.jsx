@@ -8,7 +8,7 @@ const SelectedPlayer = ({selectPlayer}) => {
     
     return (
         <>
-        <div className='grid grid-cols-1'>
+        <div className=''>
                 {
             selectPlayer.length>0 ? selectPlayer.map(player =>< RenderSelect player={player}></RenderSelect> ) : <EmptyRender></EmptyRender>
           }
