@@ -8,7 +8,7 @@ const SelectedPlayer = ({selectPlayer}) => {
     
     return (
         <>
-        <div className=''>
+        <div className='lg:w-[1300px]'>
                 {
             selectPlayer.length>0 ? selectPlayer.map(player =>< RenderSelect player={player}></RenderSelect> ) : <EmptyRender></EmptyRender>
           }
