@@ -1,6 +1,6 @@
 import React from 'react';
 
-const EmptyRender = ({setStatus}) => {
+const EmptyRender = ({setStatus }) => {
     return (
         <>
         <div className='flex justify-center flex-col gap-5'>

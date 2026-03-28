@@ -13,9 +13,10 @@ const Player = ({ply ,coin , setCoin , selectPlayer , setSelectPlayer}) => {
     else{
       setCoin(newCoin);
           setSelectPlayer([...selectPlayer, ply]);
+           setSelect(true)
     }
     
-    setSelect(true)
+   
     
   }
   return (

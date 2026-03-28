@@ -3,7 +3,7 @@ import React from "react";
 const RenderSelect = ({ player , selectPlayer ,setSelectPlayer , coin , setCoin }) => {
 
   const handledDelete =(player )=>{
-    const deletePlayer = selectPlayer.filter(deletepl => deletepl.playerName =! player.playerName)
+    const deletePlayer = selectPlayer.filter(p => p.id !== player.id)
     setSelectPlayer(deletePlayer)
     const newBalance = coin + player.playerPrice
     setCoin(newBalance)
