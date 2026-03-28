@@ -24,7 +24,7 @@ const Players = ({fetchPlayer , status, setStatus ,coin , setCoin}) => {
          </div>
          <div className='grid  grid-cols-1 p-5 gap-4 md:grid-cols-2 lg:grid-cols-4 w-full'>
             {
-              status ==="available" ? data.map(ply => <Player key={ply.id} ply ={ply} coin ={coin} setCoin={setCoin}selectPlayer={selectPlayer} setSelectPlayer={setSelectPlayer} ></Player>) : <SelectedPlayer selectPlayer ={selectPlayer} setSelectPlayer={setSelectPlayer} coin ={coin} setCoin={setCoin}></SelectedPlayer>
+              status ==="available" ? data.map(ply => <Player key={ply.id} ply ={ply} coin ={coin} setCoin={setCoin}selectPlayer={selectPlayer} setSelectPlayer={setSelectPlayer} ></Player>) : <SelectedPlayer selectPlayer ={selectPlayer} setSelectPlayer={setSelectPlayer} coin ={coin} setCoin={setCoin} setStatus={setStatus}></SelectedPlayer>
             }
          </div>
        
