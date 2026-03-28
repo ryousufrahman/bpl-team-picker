@@ -18,7 +18,7 @@ function App() {
     <>
       <header className='max-w-[1320px] mx-auto mt-5'>
         <Navbar coin ={coin}></Navbar>
-        <Hero></Hero>
+        <Hero coin={coin} setCoin={setCoin}></Hero>
 
 
       </header>

@@ -2,7 +2,7 @@ import React from "react";
 import bgImg from "../../assets/bg-shadow.png";
 import bannerImg from '../../assets/banner-main.png'
 
-const Hero = () => {
+const Hero = ({coin , setCoin}) => {
   return (
     <>
       <div
@@ -20,7 +20,7 @@ const Hero = () => {
             <h2 className="mt-6 mb-6 text-2xl font-bold">
                 Assemble Your Ultimate Dream 11 Cricket Team
             </h2>
-            <button className="btn btn-outline btn-warning">Claim Free Credit</button>
+            <button className="btn btn-outline btn-warning" onClick={()=>setCoin(coin+1000) }>Claim Free Credit</button>
           </div>
         </div>
       </div>
