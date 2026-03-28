@@ -55,7 +55,7 @@ const Player = ({ply ,coin , setCoin , selectPlayer , setSelectPlayer}) => {
             <button className="btn text-gray-500 " onClick={handleSetCoin}
               disabled={select}
               >
-              {select ? 'Selected' : 'Choose Player'}
+              {select  ? 'Selected' : 'Choose Player'}
               </button>
           </div>
         </div>
