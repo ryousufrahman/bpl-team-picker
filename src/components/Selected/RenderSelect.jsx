@@ -1,6 +1,16 @@
 import React from "react";
 
-const RenderSelect = ({ player }) => {
+const RenderSelect = ({ player , selectPlayer ,setSelectPlayer , coin , setCoin }) => {
+
+  const handledDelete =(player )=>{
+    const deletePlayer = selectPlayer.filter(deletepl => deletepl.playerName =! player.playerName)
+    setSelectPlayer(deletePlayer)
+    const newBalance = coin + player.playerPrice
+    setCoin(newBalance)
+
+  }
+
+
   return (
     <>
     <div className="flex justify-between items-center p-5 rounded-2xl border-2 border-gray-500 mt-5 w-full">
@@ -12,7 +22,7 @@ const RenderSelect = ({ player }) => {
            </div>
 
       </div>
-      <button className="btn">Delete</button>
+      <button className="btn" onClick={()=>handledDelete(player)}>Delete</button>
      
     </div>
     </>

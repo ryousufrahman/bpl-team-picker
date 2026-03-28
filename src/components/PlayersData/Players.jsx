@@ -17,14 +17,14 @@ const Players = ({fetchPlayer , status, setStatus ,coin , setCoin}) => {
             <h2 className='font-bold text-2xl'>{ `${status=="available" ? (`Available Players : ${data.length}`)  : (`Selected Players: ${selectPlayer.length}/${data.length} `)}`}</h2>
             <div>
                 <button className={`btn rounded-r-none rounded-l-2xl ${status=='available' ? 'bg-[#E7FE29] font-bold' : ''}`} onClick={()=>setStatus('available')}>Available</button>
-                <button className={`btn rounded-l-none rounded-r-2xl ${status=='select' ? 'bg-[#E7FE29] font-bold' : ''}`} onClick={()=>setStatus('select')} >Selected</button>
+                <button className={`btn rounded-l-none rounded-r-2xl ${status=='select' ? 'bg-[#E7FE29] font-bold' : ''}`} onClick={()=>setStatus('select')} >Selected ({selectPlayer.length})</button>
             </div>
             
 
          </div>
          <div className='grid  grid-cols-1 p-5 gap-4 md:grid-cols-2 lg:grid-cols-4 w-full'>
             {
-              status ==="available" ? data.map(ply => <Player key={ply.id} ply ={ply} coin ={coin} setCoin={setCoin}selectPlayer={selectPlayer} setSelectPlayer={setSelectPlayer} ></Player>) : <SelectedPlayer selectPlayer ={selectPlayer} setSelectPlayer={setSelectPlayer} ></SelectedPlayer>
+              status ==="available" ? data.map(ply => <Player key={ply.id} ply ={ply} coin ={coin} setCoin={setCoin}selectPlayer={selectPlayer} setSelectPlayer={setSelectPlayer} ></Player>) : <SelectedPlayer selectPlayer ={selectPlayer} setSelectPlayer={setSelectPlayer} coin ={coin} setCoin={setCoin}></SelectedPlayer>
             }
          </div>
        
