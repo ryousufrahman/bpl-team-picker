@@ -4,21 +4,31 @@ import { FaUser ,  FaFlag } from "react-icons/fa";
 
 const Player = ({ply ,coin , setCoin , selectPlayer , setSelectPlayer}) => {
   const [select , setSelect] =useState(false)
+   
+    
   const handleSetCoin= ()=>{
     const newCoin = coin - ply.playerPrice
     if(newCoin<0){
       alert('not enough coin to buy this player');
       return;
     }
-    else{
-      setCoin(newCoin);
-          setSelectPlayer([...selectPlayer, ply]);
-           setSelect(true)
-    }
+    
+   
+     else{
+      setSelect(true)
+        setCoin(newCoin)
+        setSelectPlayer([... selectPlayer , ply])
+
+     }
+
+
+
+       }
+    
     
    
     
-  }
+  
   return (
     <>
       <div className="card bg-base-100  shadow-sm ">
@@ -53,7 +63,7 @@ const Player = ({ply ,coin , setCoin , selectPlayer , setSelectPlayer}) => {
           <div className="card-actions justify-between items-center">
             <p className="font-bold">Price : <span>{ply.playerPrice}</span></p>
             <button className="btn text-gray-500 " onClick={handleSetCoin}
-              disabled={select}
+              
               >
               {select  ? 'Selected' : 'Choose Player'}
               </button>
