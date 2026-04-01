@@ -1,29 +1,31 @@
-import React, { useState } from "react";
+import React from "react";
 import { FaUser ,  FaFlag } from "react-icons/fa";
 
 
 const Player = ({ply ,coin , setCoin , selectPlayer , setSelectPlayer}) => {
-  const [select , setSelect] =useState(false)
+  
+   const dublicate = selectPlayer.find(pp=> pp.id === ply.id)
    
     
   const handleSetCoin= ()=>{
     const newCoin = coin - ply.playerPrice
+   
     if(newCoin<0){
       alert('not enough coin to buy this player');
       return;
     }
     
    
-     else{
-      setSelect(true)
+    if(!dublicate){
+        
         setCoin(newCoin)
         setSelectPlayer([... selectPlayer , ply])
 
-     }
+    }
 
 
 
-       }
+  }
     
     
    
@@ -65,7 +67,7 @@ const Player = ({ply ,coin , setCoin , selectPlayer , setSelectPlayer}) => {
             <button className="btn text-gray-500 " onClick={handleSetCoin}
               
               >
-              {select  ? 'Selected' : 'Choose Player'}
+              {dublicate  ? 'Selected' : 'Choose Player'}
               </button>
           </div>
         </div>
