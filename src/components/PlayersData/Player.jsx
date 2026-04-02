@@ -64,7 +64,7 @@ const Player = ({ply ,coin , setCoin , selectPlayer , setSelectPlayer}) => {
           
           <div className="card-actions justify-between items-center">
             <p className="font-bold">Price : <span>{ply.playerPrice}</span></p>
-            <button className="btn text-gray-500 " onClick={handleSetCoin}
+            <button className={`btn text-gray-500 ${dublicate ? 'bg-green-500 ' : ''} `}onClick={handleSetCoin}
               disabled ={dublicate}
               >
               {dublicate  ? 'Selected' : 'Choose Player'}
